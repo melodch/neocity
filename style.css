@@ -5,7 +5,7 @@
 body {
   background-color: white;
   color: black;
-  font-family: "Comic Sans";
+  font-family: "Arial";
 }
 
 li { 
@@ -19,17 +19,70 @@ li:not(:last-child) {
 .slide-right {
   width: 100%;
   overflow: hidden;
-  margin-left: 300px;
-  max-width: 500px
+  margin-left: 100px;
+  max-width: 700px;
 }
 
 .slide-right h2 {
   animation: 2s slide-right 2s forwards;
-    transform:translateX(-100%);
+    transform:translateX(-30%);
 }
 
 @keyframes slide-right {
   to {
     transform:translateX(0);
+  }
+}
+
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 40s linear infinite;
+}
+
+.marquee2 span {
+  animation-delay: 8s;
+}
+
+.marquee3 span {
+  animation-delay: 20s;
+}
+
+.links {
+  /* margin: 0 auto; */
+  margin-left: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.links span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: links 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes links {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
   }
 }
