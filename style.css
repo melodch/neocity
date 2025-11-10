@@ -3,8 +3,8 @@
    "how to change link color." */
 
 body {
-  background-color: white;
-  color: black;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: "Arial";
 }
 
@@ -102,7 +102,8 @@ details {
 details > summary {
   padding: 2px 6px;
   width: 15em;
-  background-color: #dddddd;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   border: none;
   box-shadow: 1px 1px 2px rgb(0, 0, 0);
   cursor: pointer;
@@ -110,12 +111,21 @@ details > summary {
 
 details > p {
   border-radius: 0 0 10px 10px;
-  background-color: #dddddd;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   padding: 2px 6px;
   margin: 0;
-  box-shadow: 1px 1px 2px rgb(0, 0, 0);
+  box-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
 details:open > summary {
-  background-color: #ccccff;
+  background-color: #ccccffd4;
+}
+
+#container {
+    position: relative;
+}
+#view-options {
+    position: relative;
+    bottom: 0;
 }
