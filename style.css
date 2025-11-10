@@ -38,17 +38,18 @@ li:not(:last-child) {
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .marquee span {
   display: inline-block;
   padding-left: 100%;
   animation: marquee 40s linear infinite;
+  position: absolute;
 }
 
 .marquee2 span {
-  animation-delay: 8s;
+  animation-delay: 10s;
 }
 
 .marquee3 span {
@@ -96,7 +97,7 @@ li:not(:last-child) {
 }
 
 details {
-  width: 80%;
+  width: 90%;
 }
 
 details > summary {
@@ -122,10 +123,14 @@ details:open > summary {
   background-color: #ccccffd4;
 }
 
-#container {
-    position: relative;
+#mail {
+  position: fixed;
+  bottom: 250px;
+  right: 100px;
 }
-#view-options {
-    position: relative;
-    bottom: 0;
+
+#diary {
+  position: fixed;
+  bottom: 35px;
+  right: 220px;
 }
