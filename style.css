@@ -69,6 +69,14 @@ li:not(:last-child) {
   animation: links 10s linear infinite;
 }
 
+.brightness-image {
+    transition: filter 0.3s ease;
+}
+
+.brightness-image:hover {
+    filter: brightness(1.4); /* Increase brightness by 40% */
+}
+
 @keyframes marquee {
   0% {
     transform: translate(0, 0);
@@ -85,4 +93,29 @@ li:not(:last-child) {
   100% {
     transform: translate(-100%, 0);
   }
+}
+
+details {
+  width: 80%;
+}
+
+details > summary {
+  padding: 2px 6px;
+  width: 15em;
+  background-color: #dddddd;
+  border: none;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+details > p {
+  border-radius: 0 0 10px 10px;
+  background-color: #dddddd;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+details:open > summary {
+  background-color: #ccccff;
 }
