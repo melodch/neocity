@@ -49,11 +49,11 @@ li:not(:last-child) {
 }
 
 .marquee2 span {
-  animation-delay: 10s;
+  animation-delay: 12s;
 }
 
 .marquee3 span {
-  animation-delay: 20s;
+  animation-delay: 23s;
 }
 
 .links {
@@ -123,16 +123,50 @@ details:open > summary {
   background-color: #ccccffd4;
 }
 
+#mysticalcrystal {
+  position: fixed;
+  bottom: 30px;
+  right: 80px;
+}
+
+#dragongold {
+  position: fixed;
+  top: 50px;
+  left: 30px;
+}
+
 #mail {
   position: fixed;
   bottom: 250px;
   right: 100px;
-  width: 80px;
-  height: 30px;
 }
 
-#diary {
+#TravChir {
   position: fixed;
-  bottom: 35px;
-  right: 220px;
+  top: 210px;
+  left: 330px;
+}
+
+#tamas10 {
+  position: fixed;
+  top: 100px;
+  right: 130px;
+}
+
+#kitty3d {
+  position: fixed;
+  bottom: 100px;
+  left: 10px;
+}
+
+#aniHAMSTER {
+  position: fixed;
+  top: 380px;
+  left: 250px;
+}
+
+#monkey {
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
 }
